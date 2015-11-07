@@ -17,7 +17,8 @@ title: 第一篇Blog
 1. 配置Atom作为Git的编辑工具
    > git config --global core.editor "atom --wait"
 
-2. 为博客这个Git库配置不同的用户和Email
+2. 为博客的Git库配置不同的用户和Email
   > git config user.name "Peter Liu"
 
   > git config user.email "liupengf12@gmail.com"
+3. 练习Git操作（Atlassian提供的这个Git教程真的不错）
