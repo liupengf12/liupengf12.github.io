@@ -7,7 +7,8 @@ title: 如何在Ubuntu上安装最新版本的Git
 在安装Git的时候发现默认APT源中包含的Git版本太低了v1.9.1，而当前[Git](http://git-scm.com/)的最新版本是v2.6.3，于是就开始搜索如何安装最新版本的Git。
 
 通过[百度](http://www.cnblogs.com/zhcncn/p/4030078.html)和[Google](http://stackoverflow.com/questions/19109542/installing-latest-version-of-git-in-ubuntu)都搜索到了相同的解决办法：
-```
+
+```shell
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install git
@@ -23,11 +24,14 @@ sudo apt-get install git
 > Personal Package Archives (PPA) allow you to upload Ubuntu source packages to be built and published as an apt repository by Launchpad. You can find out more about PPAs and how to use them in our help page.
 
 在执行第一行命令的时候返回一个错误：
-```
+
+```shell
 sudo: add-apt-repository: command not found
 ```
+
 去掉sudo后又提示一个不同的错误：
-```
+
+```shell
 The program 'add-apt-repository' is currently not installed. You can install it by typing:
 apt-get install software-properties-common
 ```
@@ -37,7 +41,10 @@ software-properties-common又是个啥？官方站点的[解释](https://apps.ub
 > This package contains the common files for software-properties like the D-Bus backend.
 
 终于我的Git变成了最新版本：
-```
+
+```shell
 git --version
 git version 2.6.3
 ```
+
+:v:
