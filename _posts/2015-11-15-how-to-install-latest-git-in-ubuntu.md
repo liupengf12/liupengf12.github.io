@@ -8,7 +8,7 @@ title: 如何在Ubuntu上安装最新版本的Git
 
 通过[百度](http://www.cnblogs.com/zhcncn/p/4030078.html)和[Google](http://stackoverflow.com/questions/19109542/installing-latest-version-of-git-in-ubuntu)都搜索到了相同的解决办法：
 
-```
+```bash
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install git
@@ -25,13 +25,13 @@ sudo apt-get install git
 
 在执行第一行命令的时候返回一个错误：
 
-```
+```bash
 sudo: add-apt-repository: command not found
 ```
 
 去掉sudo后又提示一个不同的错误：
 
-```
+```bash
 The program 'add-apt-repository' is currently not installed. You can install it by typing:
 apt-get install software-properties-common
 ```
@@ -42,7 +42,7 @@ software-properties-common又是个啥？官方站点的[解释](https://apps.ub
 
 终于我的Git变成了最新版本：
 
-```
+```bash
 git --version
 git version 2.6.3
 ```
